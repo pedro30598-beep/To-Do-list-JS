@@ -1,6 +1,69 @@
+:root{
+    --color-cinza-escuro: #292929;
+    --color-cinza-claro: #555555;
+    --color-dark:rgb(14, 14, 14);
+    --color-light:#fff;
+}
+
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
-    background-color: #f4f4f4;
+    background-color: var(--color-cinza-escuro);
     margin: 0;
     padding: 0;
+    color:var(--color-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:4rem;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap:4rem;
+
+}
+.content-add-itn{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.content-body{
+
+}
+
+#input-tarefa,
+#novatarefa{
+border: none;
+font-size: 1.2rem;
+outline: none;
+padding: 1rem;
+}
+#input-tarefa{
+    width: 30rem;
+    border-radius: 1rem;
+}
+#novatarefa{
+    transform: scale(1.2);
+    background-color: var(--color-cinza-claro);
+    color: var(--color-light);
+    border-radius: 50%;
+    transition: 400ms;
+}
+#novatarefa:hover{
+    cursor: pointer;
+    filter: brightness(50%);
+}
+#to-do-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+}
+#to-do-list li{
+    list-style: none;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
 }
